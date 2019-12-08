@@ -81,8 +81,6 @@ TESTS = {
          ),
          'answer': [False, True, False, False, True, True, False]},
     ],
-    'Extra': [
-    ],
     'Random': [{'input': data, 'answer': on_same_path(*data)}
                for data in map(random_input, nb_nodes_for_random_tests)],
 }
