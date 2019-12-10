@@ -1,17 +1,18 @@
 <p style="text-align: justify;">
-    You have to write a function that receive a tree &ndash; potentially large but finite &ndash;
-    and a list of pairs of tree's nodes.
-    For each pair, you must determine if the two nodes are on a same path in the tree
-    (True if there are on the same path, False otherwise),
+    You have to write a function that receives a tree &ndash; potentially large but finite &ndash;
+    and a list of pairs of tree's nodes.<br>
+    For each pair, you must determine if the two nodes are on a same path (True) in the tree or not (False),
     then return a iterable/list of these booleans.
 </p>
 
 <p>
-    Nodes are all integers or all strings.
+    <strong>Input:</strong> two arguments,
+        <ul>
+            <li>a tree as a tuple (node, list of sub-trees);</li>
+            <li>a list of pairs (tuples of two nodes).</li>
+        </ul>
     <br>
-    <strong>Input:</strong> A tree: a tuple (node, list of sub-trees) ; and a list of pairs (tuples of two nodes).
-    <br>
-    <strong>Ouput:</strong> An iterable/list of booleans.
+    <strong>Output:</strong> An iterable/list of booleans.
 </p>
 
 <div class="for_info_only" style="text-align: center;">
@@ -21,8 +22,12 @@
     <img src="{{MEDIA}}basic-3.png" alt="basic #3" title="basic #3" style="max-height: 135px;">
 </div>
 
+<br>
+
 <div class="for_info_only">
 <strong>Examples:</strong>
+<br>
+<br>
 <pre class="brush: python">
 on_same_path(
     ('Me', [('Daddy', [('Grandpa', []),
@@ -56,7 +61,8 @@ on_same_path(
 <p>
     <strong>Preconditions:</strong>
     <ul>
-        <li>The tree is finite and has less than 1000 nodes.</li>
-        <li>len(pairs) &le; 32</li>
+        <li>the tree is finite and has less than 1000 nodes;</li>
+        <li>for each given tree all nodes either are integers or strings;</li>
+        <li>len(pairs) &le; 32.</li>
     </ul>
 </p>
