@@ -1,0 +1,64 @@
+<p style="text-align: justify;">
+    Требуется написать функцию, которая получает два аргумента: дерево данных (конечное) и список с парами узлов.<br>
+    Для каждой из данных пар узлов нужно определить, лежат ли оба узла на одном пути (True) или нет (False).<br>
+    Функция должна вернуть список с True/False для каждой пары в соответствии с исходным порядком пар.
+</p>
+
+<p>
+    <strong>Входные данные:</strong> два аргумента,
+        <ul>
+            <li>первый - дерево в виде кортежа (узел, список поддеревьев);</li>
+            <li>список пар узлов, каждый узел - кортеж с двумя узлами.</li>
+        </ul>
+    <br>
+    <strong>Выходные данные:</strong> итератор с True/False.
+</p>
+
+<div class="for_info_only" style="text-align: center;">
+    <img src="{{MEDIA}}basic-1.png" alt="basic #1" title="basic #1" style="max-height: 135px;">
+    <img src="{{MEDIA}}basic-2.png" alt="basic #2" title="basic #2"
+         style="max-height: 180px; margin-left: 10px; margin-right: 10px;">
+    <img src="{{MEDIA}}basic-3.png" alt="basic #3" title="basic #3" style="max-height: 135px;">
+</div>
+<br>
+<br>
+<div class="for_info_only">
+<strong>Примеры:</strong>
+<pre class="brush: python">
+on_same_path(
+    ('Me', [('Daddy', [('Grandpa', []),
+                       ('Grandma', [])]),
+            ('Mom', [('Granny', []),
+                     ('?', [])])]),
+    [('Grandpa', 'Me'), ('Daddy', 'Granny')],
+) == [True, False]
+
+on_same_path(
+    (1, [(2, [(4, []),
+              (5, [(7, []),
+                   (8, []),
+                   (9, [])])]),
+         (3, [(6, [])])]),
+    [(1, 5), (2, 9), (2, 6)],
+) == [True, True, False]
+
+on_same_path(
+    (0, [(1, [(2, []),
+              (3, [])]),
+         (4, [(5, []),
+              (6, [])]),
+         (7, [(8, []),
+              (9, [])])]),
+    [(4, 2), (0, 5), (2, 3), (9, 2), (6, 4), (7, 8), (8, 1)],
+) == [False, True, False, False, True, True, False]
+</pre>
+</div>
+
+<p>
+    <strong>Предварительные условия:</strong>
+    <ul>
+        <li>все данные деревья будут конечными с количеством узлов <1000;</li>
+        <li>все узлы каждого данного дерева либо являются целыми числами, либо строками;</li>
+        <li>len(pairs) &le; 32.</li>
+    </ul>
+</p>
