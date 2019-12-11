@@ -15,13 +15,6 @@
     <strong>Output:</strong> An iterable/list of booleans.
 </p>
 
-<div class="for_info_only" style="text-align: center;">
-    <img src="{{MEDIA}}basic-1.png" alt="basic #1" title="basic #1" style="max-height: 135px;">
-    <img src="{{MEDIA}}basic-2.png" alt="basic #2" title="basic #2"
-         style="max-height: 180px; margin-left: 10px; margin-right: 10px;">
-    <img src="{{MEDIA}}basic-3.png" alt="basic #3" title="basic #3" style="max-height: 135px;">
-</div>
-
 <br>
 
 <div class="for_info_only">
@@ -36,7 +29,9 @@ on_same_path(
                      ('?', [])])]),
     [('Grandpa', 'Me'), ('Daddy', 'Granny')],
 ) == [True, False]
-
+</pre>
+<img src="{{MEDIA}}basic-1.png" alt="basic #1" title="basic #1" style="max-height: 1000px; margin-top: 10px; margin-bottom: 10px;">
+<pre class="brush: python">
 on_same_path(
     (1, [(2, [(4, []),
               (5, [(7, []),
@@ -45,7 +40,9 @@ on_same_path(
          (3, [(6, [])])]),
     [(1, 5), (2, 9), (2, 6)],
 ) == [True, True, False]
-
+</pre>
+<img src="{{MEDIA}}basic-2.png" alt="basic #2" title="basic #2" style="max-height: 1000px; margin-top: 15px; margin-bottom: 10px;">
+<pre class="brush: python">
 on_same_path(
     (0, [(1, [(2, []),
               (3, [])]),
@@ -57,6 +54,9 @@ on_same_path(
 ) == [False, True, False, False, True, True, False]
 </pre>
 </div>
+
+<img src="{{MEDIA}}basic-3.png" alt="basic #3" title="basic #3" style="max-height: 1000px; margin-top: 15px; margin-bottom: 10px;">
+
 
 <p>
     <strong>Preconditions:</strong>
