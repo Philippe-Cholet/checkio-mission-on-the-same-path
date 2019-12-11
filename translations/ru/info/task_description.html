@@ -1,21 +1,18 @@
 <p style="text-align: justify;">
-    You have to write a function that receives a tree &ndash; potentially large but finite &ndash;
-    and a list of pairs of tree's nodes.<br>
-    For each pair, you must determine if the two nodes are on a same path (True) in the tree or not (False),
-    then return a iterable/list of these booleans.
+    Требуется написать функцию, которая получает два аргумента: дерево данных (конечное) и список с парами узлов.<br>
+    Для каждой из данных пар узлов нужно определить, лежат ли оба узла на одном пути (True) или нет (False).<br>
+    Функция должна вернуть список с True/False для каждой пары в соответствии с исходным порядком пар.
 </p>
 
 <p>
-    <strong>Input:</strong> two arguments:
-    <ul>
-        <li>a tree as a tuple (node, list of sub-trees)</li>
-        <li>a list of pairs (tuples of two nodes)</li>
-    </ul>
+    <strong>Входные данные:</strong> два аргумента:
+        <ul>
+            <li>первый - дерево в виде кортежа (узел, список поддеревьев)</li>
+            <li>список пар узлов, каждый узел - кортеж с двумя узлами</li>
+        </ul>
     <br>
-    <strong>Output:</strong> An iterable/list of booleans.
+    <strong>Выходные данные:</strong> итератор с True/False.
 </p>
-
-<br>
 
 <div class="for_info_only">
 <strong>Examples:</strong>
@@ -59,10 +56,10 @@ on_same_path(
 
 
 <p>
-    <strong>Preconditions:</strong>
+    <strong>Предварительные условия:</strong>
     <ul>
-        <li>the tree is finite and has less than 1000 nodes</li>
-        <li>for each given tree all nodes either are integers or strings</li>
+        <li>все данные деревья будут конечными с количеством узлов <1000</li>
+        <li>все узлы каждого данного дерева либо являются целыми числами, либо строками</li>
         <li>len(pairs) &le; 32</li>
     </ul>
 </p>
