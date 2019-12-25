@@ -2,14 +2,14 @@
     You have to write a function that receives a tree &ndash; potentially large but finite &ndash;
     and a list of pairs of tree's nodes.<br>
     For each pair, you must determine if the two nodes are on a same path (True) in the tree or not (False),
-    then return a iterable/list of these booleans.
+    then return an iterable/list of these booleans.
 </p>
 
 <p>
     <strong>Input:</strong> two arguments:
     <ul>
-        <li>a tree as a tuple (node, list of sub-trees)</li>
-        <li>a list of pairs (tuples of two nodes)</li>
+        <li>a tree as a tuple (a node, list of sub-trees)</li>
+        <li>a list of pairs (the tuples of two nodes)</li>
     </ul>
     <br>
     <strong>Output:</strong> An iterable/list of booleans.
@@ -18,7 +18,7 @@
 <br>
 
 <div class="for_info_only">
-<strong>Examples:</strong>
+<strong>Example:</strong>
 <br>
 <br>
 <pre class="brush: python">
@@ -62,7 +62,7 @@ on_same_path(
     <strong>Preconditions:</strong>
     <ul>
         <li>the tree is finite and has less than 1000 nodes</li>
-        <li>for each given tree all nodes either are integers or strings</li>
+        <li>for each given tree all nodes are either the integers or strings</li>
         <li>len(pairs) &le; 32</li>
     </ul>
 </p>
